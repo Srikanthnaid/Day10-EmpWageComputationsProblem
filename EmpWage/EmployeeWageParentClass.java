@@ -13,6 +13,7 @@ public class EmployeeWageParentClass {
 	    protected int TOTAL_EMP_HRS = 0;
 	    protected int TOTAL_WORKING_DAYS = 0;
 	    protected static final int MAX_WORKING_DAYS = 20;
+		private static final int MAX_HRS_IN_MONTH = 100;
 	    protected int TOTAL_SALARY =0;
 
 	// generating random number
@@ -28,6 +29,9 @@ public class EmployeeWageParentClass {
             default -> EMP_HRS = 0;
         }
         TOTAL_EMP_HRS = TOTAL_EMP_HRS + EMP_HRS;
+        if (TOTAL_EMP_HRS > MAX_HRS_IN_MONTH){
+            TOTAL_EMP_HRS = TOTAL_EMP_HRS - EMP_HRS;
+        }
 
     }
 

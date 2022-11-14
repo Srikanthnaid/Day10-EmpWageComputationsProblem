@@ -6,7 +6,7 @@ public class EmployeeWageComputation {
 		// creating object for child class
 		EmployeeWageChildClass employeeData = new EmployeeWageChildClass();
 
-		// Getting Wages for month
-		employeeData.wagesForMonth();
+		// Getting Wages For Working Hour And Days
+		employeeData.wagesForWorkingHourAndDays();
 	}
 }
