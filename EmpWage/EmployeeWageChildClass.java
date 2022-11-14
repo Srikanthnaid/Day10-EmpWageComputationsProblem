@@ -2,11 +2,17 @@ package EmpWage;
 
 public class EmployeeWageChildClass extends EmployeeWageParentClass {
 
-	// Calculating employee wage using switch case statement
-	protected void empWageSwitch() {
-		System.out.println("--------Using Switch---------");
-		employeeWageUsingSwitch();
-		TotalWageInDay = WAGE_PER_HR * EMP_HRS;
-		System.out.println("Total wage in Day : " + TotalWageInDay);
-	}
+    //Calculating Wages for a month
+    protected void wagesForMonth(){
+        System.out.println("--------Wages for a month---------");
+        while (TOTAL_WORKING_DAYS < MAX_WORKING_DAYS){
+            getRandomNumber();
+            employeeWageUsingSwitch();
+            TOTAL_WORKING_DAYS++;
+        }
+        TOTAL_SALARY = WAGE_PER_HR * TOTAL_EMP_HRS;
+        System.out.println("Total Salary : "+TOTAL_SALARY);
+
+    }
+
 }
