@@ -12,6 +12,6 @@ public class EmployeeWageComputation {
 		employeeData.getRandomNumber();
 
 		// Getting daily Emp Wage
-		employeeData.dailyEmployeeWage();
+		employeeData.partTimeEmployeeWage();
 	}
 }
