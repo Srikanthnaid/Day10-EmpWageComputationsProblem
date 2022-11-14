@@ -9,7 +9,11 @@ public class EmployeeWageParentClass {
 	protected int MAX_WORKING_DAYS;
 	protected int MAX_HRS_IN_MONTH;
 	protected int TOTAL_SALARY;
-	//parameter constructor
+
+	public EmployeeWageParentClass() {
+
+	}
+
 	public EmployeeWageParentClass(String company, int WAGE_PER_HR, int MAX_WORKING_DAYS, int MAX_HRS_IN_MONTH) {
 		this.company = company;
 		this.WAGE_PER_HR = WAGE_PER_HR;
