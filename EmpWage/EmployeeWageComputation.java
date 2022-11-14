@@ -11,7 +11,7 @@ public class EmployeeWageComputation {
 		// Getting random number
 		employeeData.getRandomNumber();
 
-		// Checking for employee attendance
-		employeeData.employeeAttendance();
+		// Getting daily Emp Wage
+		employeeData.dailyEmployeeWage();
 	}
 }

@@ -2,12 +2,16 @@ package EmpWage;
 
 public class EmployeeWageChildClass extends EmployeeWageParentClass {
 
-	// Check Employee Attendance
-	protected void employeeAttendance() {
-		if (randomCheck == IS_PRESENT) {
-			System.out.print("Employee is Present");
-		} else {
-			System.out.print("Employee is Absent");
-		}
-	}
+    //Calculating Daily wage of Employee
+    protected void dailyEmployeeWage(){
+        System.out.println("--------Daily Wage---------");
+        if (randomCheck == IS_PRESENT) {
+            EMP_HRS = 8;
+        }
+        else {
+            EMP_HRS = 0;
+        }
+        TotalWageInDay = WAGE_PER_HR * EMP_HRS;
+        System.out.println("Total wage in Day : "+TotalWageInDay);
+    }
 }
